@@ -5,12 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const valueControls = document.getElementById('valueControls');
     const demoElement = document.getElementById('demoElement');
     const cssCode = document.getElementById('cssCode');
+    const sampleText = document.getElementById('sampleText');
     
     console.log('Elements found:', {
         propertySelect: !!propertySelect,
         valueControls: !!valueControls,
         demoElement: !!demoElement,
-        cssCode: !!cssCode
+        cssCode: !!cssCode,
+        sampleText: !!sampleText
+    });
+
+    // Handle sample text changes
+    sampleText.addEventListener('input', (e) => {
+        demoElement.textContent = e.target.value;
     });
 
     const appliedStyles = new Map();
