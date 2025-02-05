@@ -59,9 +59,15 @@ The tool is compatible with modern browsers that support:
 
 ## Getting Started
 
-1. Clone the repository
-2. Open `index.html` in a modern web browser
-3. Start experimenting with CSS properties!
+You can use the CSS Property Explorer in two ways:
+
+1. **Online Version**:
+   - Visit [https://csspe.d3v0ps.cloud](https://csspe.d3v0ps.cloud) to use the tool directly in your browser
+
+2. **Local Setup**:
+   1. Clone the repository
+   2. Open `index.html` in a modern web browser
+   3. Start experimenting with CSS properties!
 
 No build process or dependencies required - it works right out of the box.
 
