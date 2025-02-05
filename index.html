@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Property Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS Property Explorer</h1>
+        </header>
+        
+        <main>
+            <div class="controls">
+                <select id="propertySelect">
+                    <option value="">Select a CSS Property</option>
+                    <option value="width">width</option>
+                    <option value="height">height</option>
+                    <option value="margin">margin</option>
+                    <option value="padding">padding</option>
+                    <option value="border">border</option>
+                    <option value="font-size">font-size</option>
+                    <option value="font-weight">font-weight</option>
+                    <option value="font-family">font-family</option>
+                    <option value="text-align">text-align</option>
+                    <option value="line-height">line-height</option>
+                    <option value="letter-spacing">letter-spacing</option>
+                    <option value="text-decoration">text-decoration</option>
+                    <option value="color">color</option>
+                    <option value="background-color">background-color</option>
+                    <option value="background-image">background-image</option>
+                    <option value="opacity">opacity</option>
+                    <option value="display">display</option>
+                    <option value="position">position</option>
+                    <option value="float">float</option>
+                    <option value="box-shadow">box-shadow</option>
+                    <option value="text-shadow">text-shadow</option>
+                    <option value="border-radius">border-radius</option>
+                    <option value="transform">transform</option>
+                    <option value="transition">transition</option>
+                </select>
+                <div id="valueControls"></div>
+            </div>
+
+            <div class="display-area">
+                <div class="preview-box">
+                    <div id="demoElement">
+                        Sample Text
+                    </div>
+                </div>
+                
+                <div class="code-box">
+                    <h3>Applied CSS</h3>
+                    <pre id="cssCode"></pre>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
