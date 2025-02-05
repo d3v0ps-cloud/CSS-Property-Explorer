@@ -178,4 +178,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize with empty code
     updateCssCode();
     console.log('Initialization complete');
+
+    // Copy button functionality
+    const copyButton = document.getElementById('copyButton');
+    copyButton.addEventListener('click', async () => {
+        const cssText = cssCode.textContent;
+        try {
+            await navigator.clipboard.writeText(cssText);
+            const originalText = copyButton.textContent;
+            copyButton.textContent = 'Copied!';
+            setTimeout(() => {
+                copyButton.textContent = originalText;
+            }, 2000);
+        } catch (err) {
+            console.error('Failed to copy text:', err);
+        }
+    });
 });
